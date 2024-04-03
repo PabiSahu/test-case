@@ -6,13 +6,13 @@
 </head>
 <body>
     <h2>Add Employee</h2>
-    <form action="/add-employee" method="post">
-        Employee Name: <input type="text" name="ename"><br>
-        Salary: <input type="text" name="sal"><br>
-        Manager ID: <input type="text" name="mgr"><br>
-        Commission: <input type="text" name="comm"><br>
-        Department No: <input type="text" name="deptno"><br>
-        <input type="submit" value="Save">
+    <form >
+        Employee Name: <input type="text"><br>
+        Salary: <input type="text" ><br>
+        Manager ID: <input type="text" ><br>
+        Commission: <input type="text" ><br>
+        Department No: <input type="text"><br>
+        <input type="submit">
     </form>
 
     <table border="1">
@@ -24,16 +24,15 @@
             <th>Commission</th>
             <th>Dept No</th>
         </tr>
-        <% employees.forEach(function(employee) { %>
         <tr>
-            <td><%= employee.empno %></td>
-            <td><%= employee.ename %></td>
-            <td><%= employee.sal %></td>
-            <td><%= employee.mgr %></td>
-            <td><%= employee.comm %></td>
-            <td><%= employee.deptno %></td>
+            <td>67</td>
+            <td>GDFG</td>
+            <td>898</td>
+            <td>UTYU</td>
+            <td>7676</td>
+            <td>10</td>
         </tr>
-        <% }); %>
+        
     </table>
 </body>
 </html>
