@@ -7,14 +7,14 @@ const port = 3000;
 // Parsing middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Create a MySQL connection
-const connection = mysql.createConnection({
-  Hostname: 'dpg-co6f6vgl6cac73a7voeg-a',
-  Username: 'root',
-  password: '8rhbXfLTcHdrsi8roY9zS5C21RYDkx0q',
-  database: 'etb_hrms_schema',
-  port: 5432
-});
+// // Create a MySQL connection
+// const connection = mysql.createConnection({
+//   Hostname: 'dpg-co6f6vgl6cac73a7voeg-a',
+//   Username: 'root',
+//   password: '8rhbXfLTcHdrsi8roY9zS5C21RYDkx0q',
+//   database: 'etb_hrms_schema',
+//   port: 5432
+// });
 
 // Set view engine
 app.set('view engine', 'ejs');
