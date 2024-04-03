@@ -20,10 +20,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 
 // Connect to MySQL
-connection.connect(error => {
-  if (error) throw error;
-  console.log('Successfully connected to the database.');
-});
+// connection.connect(error => {
+//   if (error) throw error;
+//   console.log('Successfully connected to the database.');
+// });
 
 // Route to display HTML Form
 app.get('/', (req, res) => {
