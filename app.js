@@ -27,22 +27,13 @@ app.set('view engine', 'ejs');
 
 // Route to display HTML Form
 app.get('/', (req, res) => {
-  const query = 'SELECT * FROM employees';
-  connection.query(query, (error, results) => {
-    if (error) throw error;
-    res.render('index', { employees: results }); // Render the index.ejs with employee data
+    res.render('index')
   });
-});
 
 // Route for handling form submission
 app.post('/add-employee', (req, res) => {
-  const { ename, sal, mgr, comm, deptno } = req.body;
-  const query = 'INSERT INTO employees (ename, sal, mgr, comm, deptno) VALUES (?, ?, ?, ?, ?)';
-  connection.query(query, [ename, sal, mgr, comm, deptno], (error, results) => {
-    if (error) throw error;
     res.redirect('/'); // Optionally, redirect to a success page or back to the form
   });
-});
 
 // Start server
 app.listen(port, () => {
